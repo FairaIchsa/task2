@@ -10,15 +10,20 @@
   <body>
     <section class="header container-fluid">
       <!-- TODO: сделать заголовок. рзаобраться, как сделать "восхолдящий" текст -->
-      <div class="main-text">
-        <div id="row1">
-          <h1>День рождения</h1>
+      <div class="header-text mx-auto">
+        <div class="main-text mt-5">
+          <div id="str1" class="row justify-content-start">
+            <h1 class="col-auto">День рождения</h1>
+          </div>
+          <div id="str2" class="row justify-content-end">
+            <h1 class="col-auto">Аркадия Паровозова!</h1>
+          </div>
         </div>
-        <div id="row2">
-          <h1>Аркадия Паровозова!</h1>
+        <div class="row justify-content-center mt-2">
+          <h2 class="col-auto">детский спектакль</h2>
+          <h2 class="col-auto">интерактивного формата</h2>
         </div>
       </div>
-      <h2>детский спектакль интерактивного формата</h2>
       <img class= "d-block mx-auto" src="static/img/character.png" alt="">
     </section>
 
@@ -44,22 +49,34 @@
     <section class="ticket container-fluid">
       <a href="#"><img class="py-3 d-block mx-auto" src="static/img/buy_ticket.png" alt=""></a>
       <div class="row">
-        <div class="col-auto d-flex align-items-center gx-2" style="color: #EE2A24;">
-          <div class="position-relative circle d-flex align-items-center justify-content-center">
-            <p>a</p>
+        <div class="col-auto d-flex align-items-center" style="color: #EE2A24;">
+          <div class="circle flex-shrink-0" style="background-color: #EE2A24; background-image: url('static/img/bg_1.svg');">
+            <p>1</p>
           </div>
           <p>Скопируйте промокод</p>
         </div>
-        <div class="col-auto" style="color: #F78D1E;">
+        <div class="col-auto d-flex align-items-center" style="color: #F78D1E;">
+          <div class="circle flex-shrink-0" style="background-color: #FFCB05; background-image: url('static/img/bg_2.svg');">
+            <p>2</p>
+          </div>
           <p>Перейдите на <a style="color: #F78D1E" href="#">страницу покупки билетов</a></p>
         </div>
-        <div class="col-auto" style="color: #529540;">
+        <div class="col-auto d-flex align-items-center" style="color: #529540;">
+          <div class="circle flex-shrink-0" style="background-color: #5FBB46; background-image: url('static/img/bg_3.svg');">
+            <p>3</p>
+          </div>
           <p>Выберите подходящую вам дату спектакля и понравившиеся места</p>
         </div>
-        <div class="col-auto" style="color: #005E9E;">
+        <div class="col-auto d-flex align-items-center" style="color: #005E9E;">
+          <div class="circle flex-shrink-0" style="background-color: #005E9E; background-image: url('static/img/bg_4.svg');">
+            <p>4</p>
+          </div>
           <p>Примените промокод и получите скидку на билеты</p>
         </div>
-        <div class="col-auto" style="color: #8B127C;">
+        <div class="col-auto d-flex align-items-center" style="color: #8B127C;">
+          <div class="circle flex-shrink-0" style="background-color: #A9449C; background-image: url('static/img/bg_5.svg');">
+            <p>5</p>
+          </div>
           <p>Произведите оплату и получите билеты со скидкой!</p>
         </div>
       </div>
