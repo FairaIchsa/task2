@@ -21,10 +21,31 @@ body {
 /* header */
 
 .header {
+  overflow: hidden;
+}
 
+.header .cloud {
+  position: absolute;
+  z-index: -1;
+}
+
+.header #cloud_1 {
+  left: -20px;
+  top: -10px;
+}
+
+.header #cloud_2 {
+  right: 30px;
+  top: -10px;
+}
+
+.header #cloud_3 {
+  right: -20px;
+  top: -90px;
 }
 
 .header .header-text {
+  padding-top: 50px;
   height: 203px;
   max-width: 335px;
 
@@ -140,6 +161,10 @@ body {
 
 }
 
+.ticket .list {
+  max-width: 560px;
+}
+
 .ticket p {
   font-family: 'Coliseum';
   font-size: 18px;
@@ -178,13 +203,38 @@ body {
 /* footer */
 
 .footer {
+  padding-top: 16px;
+  padding-bottom: 40px;
 
+  overflow: hidden;
+}
+
+.footer .footer-container {
+  height: 112px;
+  width: 567px;
+
+  position: relative;
+
+  background-image: url('../img/footer.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.footer .footer-text {
+  height: 52px;
+  width: 256px;
+
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+
+  flex-shrink: 0;
 }
 
 .footer h3 {
   color: #323B46;
   text-align: center;
-  font-family: 'Coliseum';
+  font-family: 'Coliseum-Black';
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
