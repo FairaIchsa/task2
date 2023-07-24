@@ -62,7 +62,7 @@ body[data-aos-duration='4000'] [data-aos],
 .header .header-text {
   padding-top: 50px;
   height: 203px;
-  max-width: 335px;
+  max-width: 320px;
 
   transform: rotate(-5deg) skew(-5deg);
 }
@@ -79,11 +79,20 @@ body[data-aos-duration='4000'] [data-aos],
 
   margin: 0;
   padding: 9.009px 7.792px 6.927px 7.792px;
+}
 
+.header .str {
   background: #E80201;
+}
 
+.header .mask {
+  color: #FFFFFF;
+  -webkit-mask-image: linear-gradient(90deg, #FFFFFF00, #FFFFFF, #FFFFFF00, #FFFFFF, #FFFFFF00);
+}
 
-  /* -webkit-mask-image: linear-gradient(#FFFFFF00, #FFFFFF, #FFFFFF00, #FFFFFF, #FFFFFF00); */
+.header #str2 {
+  margin-top: -5px;
+  background: conic-gradient(from 207deg at 51.96% -0.47%, rgba(0, 0, 0, 0.20) 9.374999776482582deg, rgba(0, 0, 0, 0.00) 360deg), #E80201;
 }
 
 .header h2 {
@@ -101,14 +110,6 @@ body[data-aos-duration='4000'] [data-aos],
 
 .header .outline {
   -webkit-text-stroke: 10px #FFFFFF;
-}
-
-.header #str1 {
-}
-
-.header #str2 {
-  margin-top: -5px;
-  /* background: conic-gradient(from 207deg at 51.96% -0.47%, rgba(0, 0, 0, 0.20) 9.374999776482582deg, rgba(0, 0, 0, 0.00) 360deg), #E80201; */
 }
 
 /* promocode */
