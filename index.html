@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="static/css/styles.css">
+    <title></title>
   </head>
   <body>
     <section class="header container-fluid">
 
       <!-- TODO: разобраться, почему не работает с position: absolute -->
-      <div class="position-relative"
-            data-aos="slide-down">
-          <img class="cloud" id="cloud_1" src="static/img/cloud_1.svg" alt="">
-          <img class="cloud" id="cloud_2" src="static/img/cloud_2.svg" alt="">
-          <img class="cloud" id="cloud_3" src="static/img/cloud_3.svg" alt="">
+      <div id="cloud-container" class="mx-auto"
+            data-aos="slide-down"
+            data-aos-duration="4000">
+          <img id="cloud_1" src="static/img/cloud_1.svg" alt="">
+          <img id="cloud_2" src="static/img/cloud_2.svg" alt="">
+          <img id="cloud_3" src="static/img/cloud_3.svg" alt="">
       </div>
 
       <div class="header-text mx-auto">
@@ -31,8 +32,8 @@
         </div>
         <!-- TODO: добавить фон, дублирующий форму текста -->
         <div class="row justify-content-center mt-2">
-          <h2 class="col-auto">детский спектакль</h2>
-          <h2 class="col-auto">интерактивного формата</h2>
+          <h2 class="col-auto position-absolute outline">детский спектакль интерактивного формата</h2>
+          <h2 class="col-auto position-absolute">детский спектакль интерактивного формата</h2>
         </div>
       </div>
       <img class= "d-block mx-auto" src="static/img/character.png" alt="">
@@ -60,7 +61,7 @@
     <section class="ticket container-fluid"
               data-aos="fade">
       <a href="#"><img class="py-3 d-block mx-auto" src="static/img/buy_ticket.png" alt=""></a>
-      <div class="list row mx-auto">
+      <div id="list" class="row mx-auto">
         <div class="col-auto d-inline-flex align-items-center" style="color: #EE2A24;">
           <div class="circle flex-shrink-0" style="background-color: #EE2A24; background-image: url('static/img/bg_1.svg');">
             <p>1</p>
@@ -95,14 +96,14 @@
     </section>
 
     <section class="footer container-fluid">
-      <div class="footer-container mx-auto"
-              data-aos="slide-right">
-        <div class="footer-text row justify-content-center align-items-center">
-          <h3 class="col-12 px-0">ждём вас</h3>
-          <h3 class="col-12 px-0">на нашем празднике!</h3>
+      <div class="footer-container" data-aos="slide-right">
+        <div class="footer-element mx-auto">
+          <div class="footer-text row px-0 justify-content-center align-items-center">
+            <h3 class="col-12 px-0">ждём вас</h3>
+            <h3 class="col-12 px-0">на нашем празднике!</h3>
+          </div>
         </div>
       </div>
-
     </section>
 
     <script src="static/js/bootstrap.min.js"></script>

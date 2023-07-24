@@ -14,6 +14,11 @@ body {
   background-repeat: no-repeat;
 }
 
+body[data-aos-duration='4000'] [data-aos],
+ [data-aos][data-aos][data-aos-duration='4000'] {
+   transition-duration: 4000ms;
+ }
+
 .container-fluid {
   padding: 0 20px 0;
 }
@@ -24,24 +29,34 @@ body {
   overflow: hidden;
 }
 
-.header .cloud {
+.header #cloud-container {
   position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 300px;
+  max-width: 500px;
   z-index: -1;
 }
 
+.header #cloud-container img {
+  position: absolute;
+}
+
 .header #cloud_1 {
-  left: -20px;
-  top: -10px;
+  top: -5px;
 }
 
 .header #cloud_2 {
-  right: 30px;
-  top: -10px;
+  right: 48px;
 }
 
 .header #cloud_3 {
-  right: -20px;
-  top: -90px;
+  right: 0px;
+  top: -88px;
 }
 
 .header .header-text {
@@ -84,16 +99,16 @@ body {
   margin: 0;
 }
 
+.header .outline {
+  -webkit-text-stroke: 10px #FFFFFF;
+}
+
 .header #str1 {
 }
 
 .header #str2 {
   margin-top: -5px;
   /* background: conic-gradient(from 207deg at 51.96% -0.47%, rgba(0, 0, 0, 0.20) 9.374999776482582deg, rgba(0, 0, 0, 0.00) 360deg), #E80201; */
-}
-
-.header #str3 {
-
 }
 
 /* promocode */
@@ -161,7 +176,7 @@ body {
 
 }
 
-.ticket .list {
+.ticket #list {
   max-width: 560px;
 }
 
@@ -210,6 +225,10 @@ body {
 }
 
 .footer .footer-container {
+  min-width: 567px;
+}
+
+.footer .footer-element {
   height: 112px;
   width: 567px;
 
@@ -217,7 +236,6 @@ body {
 
   background-image: url('../img/footer.png');
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .footer .footer-text {
