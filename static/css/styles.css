@@ -226,7 +226,7 @@ body[data-aos-duration='4000'] [data-aos],
 }
 
 .footer .footer-container {
-  min-width: 567px;
+  /* min-width: 567px; */
 }
 
 .footer .footer-element {
