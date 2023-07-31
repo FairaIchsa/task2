@@ -26,7 +26,6 @@ body[data-aos-duration='4000'] [data-aos],
 /* header */
 
 .header {
-  overflow: hidden;
 }
 
 .header #cloud-container {
@@ -149,7 +148,7 @@ body[data-aos-duration='4000'] [data-aos],
   align-self: stretch;
   color: #323B46;
   text-align: center;
-  font-family: Coliseum;
+  font-family: 'Coliseum';
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -219,17 +218,17 @@ body[data-aos-duration='4000'] [data-aos],
 /* footer */
 
 .footer {
-  padding-top: 16px;
+  padding-top: 32px;
   padding-bottom: 40px;
 
   overflow: hidden;
 }
 
 .footer .footer-container {
-  /* min-width: 567px; */
+  /* min-width: 800px; */
 }
 
-.footer .footer-element {
+/* .footer .footer-element {
   height: 112px;
   width: 567px;
 
@@ -237,17 +236,21 @@ body[data-aos-duration='4000'] [data-aos],
 
   background-image: url('../img/footer.png');
   background-repeat: no-repeat;
-}
+} */
 
 .footer .footer-text {
-  height: 52px;
-  width: 256px;
-
   position: absolute;
-  bottom: 20px;
-  left: 40px;
+  z-index: 1;
 
-  flex-shrink: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer img {
+  position: relative;
+  top: -16px;
+  left: calc(50% - 160px);
 }
 
 .footer h3 {
