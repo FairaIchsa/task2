@@ -178,9 +178,10 @@ body[data-aos-duration='4000'] [data-aos],
 
 .ticket #list {
   max-width: 560px;
+  margin-bottom: -6px;
 }
 
-.ticket p {
+.ticket #list p {
   font-family: 'Coliseum';
   font-size: 18px;
   font-style: normal;
@@ -189,7 +190,7 @@ body[data-aos-duration='4000'] [data-aos],
   margin-bottom: 0;
 }
 
-.ticket .circle {
+.ticket #list .circle {
   display: flex;
   position: relative;
   align-items: center;
@@ -198,9 +199,11 @@ body[data-aos-duration='4000'] [data-aos],
   width: 32px!important;
   height: 32px!important;
   border-radius: 16px!important;
+
+  margin-right: 10px;
 }
 
-.ticket .circle p {
+.ticket #list .circle p {
   color: #FFF5BE;
   text-align: center;
   font-family: 'Intro Cond';
@@ -211,8 +214,8 @@ body[data-aos-duration='4000'] [data-aos],
   text-transform: uppercase;
 }
 
-.ticket .col-auto {
-  gap: 10px;
+.ticket #list .col-auto {
+  padding-bottom: 6px;
 }
 
 /* footer */
