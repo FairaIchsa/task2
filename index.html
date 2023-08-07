@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="static/css/styles.css?v=1">
+    <link rel="stylesheet" href="static/css/styles.css?v=3">
     <title></title>
   </head>
   <body>
 
-    <!-- TODO: сделать так, чтобы все изображения находились строго по центру? (сейчас при недостаточной ширине они обрезаются справа) -->
     <section class="header container-fluid overflow-hidden">
 
       <div id="cloud-container" class="mx-auto"
@@ -29,18 +28,16 @@
           </div>
         </div>
         <div class="row justify-content-end">
-          <!-- TODO: градиент в фоне -->
           <div id="str2" class="col-auto str px-0 position-relative">
             <h1 class="position-absolute">Аркадия Паровозова!</h1>
             <h1 class="mask">Аркадия Паровозова!</h1>
           </div>
         </div>
-        <div class="row justify-content-center mt-2">
-          <h2 class="col-auto position-absolute outline">детский спектакль интерактивного формата</h2>
-          <h2 class="col-auto position-absolute">детский спектакль интерактивного формата</h2>
+        <div class="row justify-content-center mt-12">
+          <h2 class="col-auto outline">детский спектакль интерактивного формата</h2>
         </div>
       </div>
-      <img class= "d-block mx-auto" src="static/img/character.png" alt="">
+      <img class= "mt-12 d-block mx-auto" src="static/img/character.png" alt="">
     </section>
 
     <section class="promocode container-fluid overflow-hidden"
@@ -49,10 +46,9 @@
         <h3 class="col-auto">Поздравляем!</h3>
         <h3 class="col-auto">Вы выиграли промокод</h3>
       </div>
-      <!-- TODO: как обрезать, чтобы было норм? -->
       <div class="row g-0 justify-content-center overflow-hidden">
         <div class="col-12 code">
-          <h2>PAROVOZOV20</h2>
+          <h2 >PAROVOZOV20</h2>
           <img src="static/img/copy.svg" alt="" height="24px">
         </div>
         <div class="col-12 px-2">
@@ -103,16 +99,7 @@
     </section>
 
     <section class="footer container-fluid px-0">
-      <!-- <div class="footer-container" data-aos="slide-right">
-        <div class="footer-element mx-auto">
-          <div class="footer-text row px-0 justify-content-center align-items-center">
-            <h3 class="col-12 px-0">ждём вас</h3>
-            <h3 class="col-12 px-0">на нашем празднике!</h3>
-          </div>
-        </div>
-      </div> -->
-      <!-- TODO: сделать так, чтобы анимация начиналась за экраном (увеличить минимальную ширину?) -->
-      <div class="position-relative" data-aos="slide-right">
+      <div class="position-relative footer-container" data-aos="slide-right">
         <div class="row g-0 footer-text">
           <h3 class="col-12 text-nowrap">ждём вас</h3>
           <h3 class="col-12 text-nowrap">на нашем празднике!</h3>
